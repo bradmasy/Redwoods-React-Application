@@ -1,0 +1,8 @@
+Gold: #efaf4d
+Black: #121617
+Brown: #5c3726
+Grey: #635b58
+Light Brown: #9f5f2d
+pinkish: #db9b82
+lighter pink: #efbeac
+turquoise blue: #3b545d
