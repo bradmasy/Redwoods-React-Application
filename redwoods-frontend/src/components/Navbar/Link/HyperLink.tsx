@@ -1,6 +1,6 @@
 import { ReactComponentElement } from 'react';
 import { Link } from './LinkInterface';
-
+import "./Link.css"
 
 interface HyperLinkProps {
     link: Link;

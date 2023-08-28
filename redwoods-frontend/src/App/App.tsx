@@ -1,29 +1,75 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Navbar } from "../../src/components/Navbar/index";
+import { Navbar } from "../components/Navbar/Navbar";
 
+import facebook from "../assets/icons/facebook.png"//"../assets/icons/facebook.svg";
+import instagram from "../assets/icons/instagram.png";
+import twitter from "../assets/icons/twitter.png";
+import youtube from "../assets/icons/youtube.png";
+import music from "../assets/icons/spotify.png";
 
 function App() {
-  const links = [
+  const linksLeft = [
     {
-      url: "https://www.google.com",
-      content: "Google"
+      url: "/",
+      content: "HOME"
     },
     {
       url: "https://www.facebook.com",
-      content: "Facebook"
+      content: "THE BOYS"
     },
     {
       url: "https://www.twitter.com",
-      content: "Twitter"
+      content: "MERCH"
     }
   ]
 
+  const linksRight = [
+    {
+      url: "/",
+      content: "MEDIA"
+    },
+    {
+      url: "https://www.facebook.com",
+      content: "DATES"
+    },
+    {
+      url: "https://www.twitter.com",
+      content: "CONTACT"
+    }
+  ]
+
+
+  const socialLinks = [
+    {
+      url: "https://www.facebook.com",
+      img: facebook
+    },
+    {
+      url: "https://www.instagram.com",
+      img: instagram
+    },
+    {
+      url: "https://www.twitter.com",
+      img: twitter
+    },
+    {
+      url: "https://www.youtube.com",
+      img: youtube
+    },
+    {
+      url: "https://www.music.com",
+      img: music
+    }
+  ]
+
+
   return (
     <div className="App">
-      <Navbar links={links} />
+      <Navbar linksLeft={linksLeft} linksRight={linksRight} icons={socialLinks} />
     </div>
+
   );
 }
 
