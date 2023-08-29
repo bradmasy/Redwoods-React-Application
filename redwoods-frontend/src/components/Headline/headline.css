@@ -56,7 +56,7 @@
     color: white;
     font-size: bold;
     font-family: "inder";
-    font-size: 20px;
+    font-size: 16px;
     text-shadow: 2px 2px 4px black;
   }
   #headline .txt #subheading {
@@ -64,7 +64,7 @@
     color: white;
     font-size: bold;
     font-family: "inder";
-    font-size: 12px;
+    font-size: 10px;
     text-shadow: 2px 2px 4px black;
   }
 }

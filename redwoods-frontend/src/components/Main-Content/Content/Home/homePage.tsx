@@ -55,6 +55,10 @@ export const HomePage: React.FC = () => {
                     </div>
                     <div className="long-photo-column">
                         <div className="long-photo-column-img">
+                            <img src={imgPaths[13]}>
+                            </img>
+                        </div>
+                        <div className="long-photo-column-img-sm">
                             <img src={imgPaths[2]}>
                             </img>
                         </div>
@@ -63,7 +67,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <div id="main-photo">
                     <img src={imgPaths[3]}></img>
-
+                    {/* <img id="" src={imgPaths[4]}></img> */}
                 </div>
                 <div id="section-2">
                     <div className="photo-row">
@@ -81,7 +85,10 @@ export const HomePage: React.FC = () => {
                         <div className="long-photo-row-img">
                             <img src={imgPaths[11]}>
                             </img>
-
+                        </div>
+                        <div className="long-photo-row-img-sm">
+                            <img src={imgPaths[10]}>
+                            </img>
                         </div>
 
                     </div>

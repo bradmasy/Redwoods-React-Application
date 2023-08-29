@@ -20,7 +20,7 @@
 #home-grid #column-align #section-1 {
   display: flex;
   justify-content: space-evenly;
-  width: 34%;
+  width: 34.5%;
 }
 #home-grid #column-align #section-1 .photo-column {
   display: flex;
@@ -42,12 +42,14 @@
 }
 #home-grid #column-align #section-1 .long-photo-column {
   display: flex;
+  flex-direction: column;
   width: 50%;
-  justify-content: right;
+  justify-content: space-between;
 }
 #home-grid #column-align #section-1 .long-photo-column .long-photo-column-img {
   display: flex;
-  width: 97%;
+  width: 100%;
+  height: 60%;
   justify-content: right;
 }
 #home-grid #column-align #section-1 .long-photo-column .long-photo-column-img img {
@@ -56,9 +58,20 @@
   width: 100%;
   border-radius: 10px 10px 10px 10px;
 }
+#home-grid #column-align #section-1 .long-photo-column .long-photo-column-img-sm {
+  display: flex;
+  width: 100%;
+  height: 38%;
+}
+#home-grid #column-align #section-1 .long-photo-column .long-photo-column-img-sm img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
 #home-grid #column-align #main-photo {
   display: flex;
-  width: 27%;
+  width: 28%;
   height: 100%;
 }
 #home-grid #column-align #main-photo img {
@@ -68,7 +81,7 @@
 }
 #home-grid #column-align #section-2 {
   display: flex;
-  width: 34%;
+  width: 34.5%;
   flex-direction: column;
 }
 #home-grid #column-align #section-2 .photo-row {
@@ -88,16 +101,30 @@
 }
 #home-grid #column-align #section-2 .long-photo-row {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 50%;
 }
 #home-grid #column-align #section-2 .long-photo-row .long-photo-row-img {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 75%;
   justify-content: end;
 }
 #home-grid #column-align #section-2 .long-photo-row .long-photo-row-img img {
+  display: flex;
+  width: 100%;
+  height: 97%;
+  border-radius: 10px 10px 10px 10px;
+}
+#home-grid #column-align #section-2 .long-photo-row .long-photo-row-img-sm {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 100%;
+  justify-content: end;
+}
+#home-grid #column-align #section-2 .long-photo-row .long-photo-row-img-sm img {
   display: flex;
   width: 100%;
   height: 97%;
@@ -115,26 +142,86 @@
   #home-grid #column-align {
     display: flex;
     flex-direction: column;
-    height: 95%;
+    height: 99%;
     width: 100%;
     justify-content: space-around;
+    overflow: scroll;
   }
   #home-grid #column-align #section-1 {
-    display: none;
+    display: flex;
     flex-direction: column;
-    border: solid blue 2px;
     width: 100%;
+    height: 33%;
+  }
+  #home-grid #column-align #section-1 .photo-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+  }
+  #home-grid #column-align #section-1 .photo-column .photo-column-img {
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    width: 49%;
+    height: 98%;
+  }
+  #home-grid #column-align #section-1 .long-photo-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+  }
+  #home-grid #column-align #section-1 .long-photo-column .long-photo-column-img {
+    display: flex;
+    width: 29%;
+    height: 98%;
+  }
+  #home-grid #column-align #section-1 .long-photo-column .long-photo-column-img-sm {
+    display: flex;
+    width: 69%;
+    height: 98%;
   }
   #home-grid #column-align #main-photo {
     display: flex;
+    height: 33%;
     width: 100%;
     justify-content: center;
   }
   #home-grid #column-align #main-photo img {
     display: flex;
-    width: 95%;
+    width: 98%;
   }
   #home-grid #column-align #section-2 {
-    display: none;
+    display: flex;
+    height: 33%;
+    width: 100%;
+  }
+  #home-grid #column-align #section-2 .photo-row {
+    display: flex;
+    width: 100%;
+  }
+  #home-grid #column-align #section-2 .photo-row .photo-row-img {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 98%;
+  }
+  #home-grid #column-align #section-2 .photo-row .photo-row-img img {
+    width: 98%;
+  }
+  #home-grid #column-align #section-2 .long-photo-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #home-grid #column-align #section-2 .long-photo-row .long-photo-row-img {
+    display: flex;
+    width: 78%;
+  }
+  #home-grid #column-align #section-2 .long-photo-row .long-photo-row-img-sm {
+    display: flex;
+    width: 20%;
   }
 }

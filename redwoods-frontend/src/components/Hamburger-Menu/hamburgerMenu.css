@@ -19,7 +19,7 @@
   #hamburger-menu #align #hamburger-set {
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 7.5%;
     justify-content: space-around;
   }
   #hamburger-menu #align #hamburger-set .bar {
