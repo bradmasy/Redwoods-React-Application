@@ -1,0 +1,186 @@
+#home-grid {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+
+    .band-img {
+        display: flex;
+        width: 14%;
+        height: 100%;
+    }
+
+    #column-align {
+
+        display: flex;
+        flex-direction: row;
+        height: 95%;
+        width: 100%;
+        justify-content: space-evenly;
+
+        #section-1 {
+            display: flex;
+            justify-content: space-evenly;
+
+            width: 34%;
+
+            .photo-column {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                height: 100%;
+
+                .photo-column-img {
+                    display: flex;
+                    height: 48.5%;
+                    width: 97%;
+
+                    img {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px 10px 10px 10px;
+                    }
+                }
+            }
+
+            .long-photo-column {
+                display: flex;
+                width: 50%;
+                justify-content: right;
+
+                .long-photo-column-img {
+                    display: flex;
+                    width: 97%;
+                    justify-content: right;
+
+                    img {
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 10px 10px 10px 10px;
+                    }
+                }
+            }
+
+        }
+
+        #main-photo {
+            display: flex;
+            width: 27%;
+            height: 100%;
+
+            img {
+                display: flex;
+                width: 100%;
+                border-radius: 10px 10px 10px 10px;
+
+            }
+
+        }
+
+        #section-2 {
+            display: flex;
+            width: 34%;
+            flex-direction: column;
+
+            .photo-row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 50%;
+
+                .photo-row-img{
+                    display: flex;
+                    width:49%;
+
+                    img{
+                        display: flex;
+                        width: 100%;
+                        border-radius:10px 10px 10px 10px;
+                    }
+                }
+            }
+
+            .long-photo-row {
+
+                display: flex;
+                width: 100%;
+                height: 50%;
+
+                .long-photo-row-img {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content:end ;
+
+                    img {
+                        display: flex;
+                        width: 100%;
+                        height:97%;
+                        border-radius:10px 10px 10px 10px;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #home-grid {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        #column-align {
+
+            display: flex;
+            flex-direction: column;
+            height: 95%;
+            width: 100%;
+            justify-content: space-around;
+
+            #section-1 {
+                display: none;
+                flex-direction: column;
+                border: solid blue 2px;
+                width: 100%;
+
+
+                .photo-column {}
+
+            }
+
+            #main-photo {
+                display: flex;
+
+                width: 100%;
+                justify-content: center;
+
+                img {
+                    display: flex;
+                    width: 95%;
+                }
+
+            }
+
+            #section-2 {
+                display: none;
+            }
+
+        }
+    }
+}

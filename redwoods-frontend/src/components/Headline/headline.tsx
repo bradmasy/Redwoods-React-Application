@@ -15,11 +15,15 @@ const redirect = (link: string) => {
 
 export const Headline: React.FC<HeadlineProps> = ({ heading, subheading }) => (
     <div id="headline" onClick={() => redirect(witchHuntLink)}>
-        <div id="heading">
-            {heading.title}
+        <div className="txt">
+            <div id="heading">
+                {heading.title}
+            </div>
         </div>
-        <div id="subheading">
-            {subheading}
+        <div className="txt" >
+            <div id="subheading">
+                {subheading}
+            </div>
         </div>
     </div>
 )

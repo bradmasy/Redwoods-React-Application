@@ -1,15 +1,16 @@
 #main-content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height:65%;
+    justify-content: space-around;
+    height:75%;
     width: 100%;
-    
 
     #content{
         background-color: black;
         border:solid 2px black;
         opacity: 0.7;
+        height:80%;
+        border-radius: 5px 5px 5px 5px;
     }
 }
 
@@ -17,18 +18,20 @@
 @media screen and (max-width: 768px) {
     #main-content{
         display: flex;
+        margin-top:5%;
         flex-direction: column;
         justify-content: center;
-        height:82%;
+        height:70%;
         width: 100%;
         justify-content: space-around;
 
 
         #content{
+            margin-top:5%;
             display: flex;
             flex-direction: column;
             height:85%;
-            border-radius:5px 5px 5px 5px;
+            border-radius:10px 10px 10px 10px;
         }
     }
 }
