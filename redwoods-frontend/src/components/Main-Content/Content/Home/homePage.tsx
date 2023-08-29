@@ -44,7 +44,7 @@ export const HomePage: React.FC = () => {
                 <div id="section-1">
                     <div className="photo-column">
                         <div className="photo-column-img">
-                            <img src={imgPaths[0]}>
+                            <img src={imgPaths[12]}>
                             </img>
                         </div>
                         <div className="photo-column-img">
@@ -72,7 +72,7 @@ export const HomePage: React.FC = () => {
                 <div id="section-2">
                     <div className="photo-row">
                         <div className="photo-row-img">
-                            <img src={imgPaths[12]}>
+                            <img src={imgPaths[7]}>
                             </img>
                         </div>
                         <div className="photo-row-img">
