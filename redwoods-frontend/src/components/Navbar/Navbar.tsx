@@ -4,7 +4,8 @@ import "./Navbar.css"
 import { BandLogo } from "../Logo/index";
 import logo_img from "../../assets/img/Redwoods_Logo_Yellow.png";
 import { SocialIconBar } from "../Icon/index";
-
+import hamburgerMenu from "../../assets/icons/hamburger-menu.png";
+import { HamburgerMenu } from "../Hamburger-Menu/hamburgerMenu";
 
 interface NavbarProps {
     linksRight: Array<{
@@ -23,11 +24,14 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ linksRight, linksLeft, icons }) => (
     <div id="navbar">
+        <HamburgerMenu menuItems={{ img: hamburgerMenu }} />
+
         <div id="links-menu">
             {linksLeft.map((link, index) => (
                 <HyperLink key={index} link={link} />
             ))}
-
+            
+           
             <BandLogo logo={{ img: logo_img }} />
 
             {linksRight.map((link, index) => (
