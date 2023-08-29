@@ -3,18 +3,16 @@ html {
   height: 100%;
   width: 100%;
   background-color: #efaf4d;
-
-
-  body {
-      display: flex;
-      height: 100%;
-      width: 99%;
-      flex-direction: column;
-
-      #root {
-          display: flex;
-          height: 100%;
-          width: 100%;
-      }
-  }
+  background-repeat: repeat;
+}
+html body {
+  display: flex;
+  height: 100%;
+  width: 99%;
+  flex-direction: column;
+}
+html body #root {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }

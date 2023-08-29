@@ -1,0 +1,1 @@
+export {BandLogo} from "./BandLogo";

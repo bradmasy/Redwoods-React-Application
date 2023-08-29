@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "inder";
+    src: url("../../assets/fonts/Inder-Regular.ttf")
+}
+
+#headline {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: bold;
+    font-family: "inder";
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+@media screen and (max-width: 768px) {
+    #headline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+
+        #heading {
+            color: white;
+            font-size: bold;
+            font-family: "inder";
+            font-size: 20px;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        #subheading {
+            color: white;
+            font-size: bold;
+            font-family: "inder";
+            font-size: 12px;
+            text-shadow: 2px 2px 4px black;
+        }
+    }
+}

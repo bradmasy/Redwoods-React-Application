@@ -1,0 +1,41 @@
+#social-icon {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+
+    img {
+        height: 90%;
+        width: 30%;
+        box-shadow: 2px 2px 5px black;
+        border-radius: 25%;
+        transition: 0.5s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #social-icon {
+        display: flex;
+        height: 100%;
+        width: 15%;
+        justify-content: center;
+
+        img {
+            height: 90%;
+            width: 100%;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 25%;
+            transition: 0.5s ease-in-out;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+
+}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "inder";
+    src: url("../../../assets/fonts/Inder-Regular.ttf")
+}
+
+.hyper-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+    font-size: 24px;
+    color: white;
+    font-size: bold;
+    font-family: "inder";
+    text-shadow: 2px 2px 4px black;
+
+    div{
+        letter-spacing: 2px;
+        transition: text-shadow 1s ease, color 2s ease;
+
+    }
+
+    div:hover{
+        color:rgb(135, 21, 3);
+        cursor: pointer;
+    
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hyper-link{
+        display: none;
+    }
+}
+    
