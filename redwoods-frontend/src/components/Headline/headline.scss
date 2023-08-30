@@ -6,11 +6,42 @@
 #headline {
     display: flex;
     justify-content: center;
-    color: white;
-    font-size: bold;
-    font-family: "inder";
-    font-size: 20px;
-    text-shadow: 2px 2px 4px black;
+    flex-direction: column;
+    width: 100%;
+
+    .txt {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+
+        #heading {
+            color: white;
+            font-size: bold;
+            font-family: "inder";
+            font-size: 20px;
+            text-shadow: 2px 2px 4px black;
+            transition: 1s ease-in-out;
+            width: 20%;
+        }
+
+        #subheading {
+            width: 15%;
+            color: white;
+            font-size: bold;
+            font-family: "inder";
+            font-size: 14px;
+            text-shadow: 2px 2px 4px black;
+            transition: 2s ease-in-out;
+
+        }
+    }
+}
+
+#headline:hover #heading,
+#headline:hover #subheading {
+    color: rgb(135, 21, 3);
+    cursor: pointer;
 }
 
 
@@ -20,22 +51,29 @@
         flex-direction: column;
         justify-content: center;
 
+        .txt {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
 
+            #heading {
+                width: 50%;
+                color: white;
+                font-size: bold;
+                font-family: "inder";
+                font-size: 16px;
+                text-shadow: 2px 2px 4px black;
+            }
 
-        #heading {
-            color: white;
-            font-size: bold;
-            font-family: "inder";
-            font-size: 20px;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        #subheading {
-            color: white;
-            font-size: bold;
-            font-family: "inder";
-            font-size: 12px;
-            text-shadow: 2px 2px 4px black;
+            #subheading {
+                width: 50%;
+                color: white;
+                font-size: bold;
+                font-family: "inder";
+                font-size: 10px;
+                text-shadow: 2px 2px 4px black;
+            }
         }
     }
 }
