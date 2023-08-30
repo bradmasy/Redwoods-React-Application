@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "inder";
+  src: url("../../assets/fonts/Inder-Regular.ttf");
+}
+#headline {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#headline .txt {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+#headline .txt #heading {
+  color: white;
+  font-size: bold;
+  font-family: "inder";
+  font-size: 20px;
+  text-shadow: 2px 2px 4px black;
+  transition: 1s ease-in-out;
+  width: 20%;
+}
+#headline .txt #subheading {
+  width: 15%;
+  color: white;
+  font-size: bold;
+  font-family: "inder";
+  font-size: 14px;
+  text-shadow: 2px 2px 4px black;
+  transition: 2s ease-in-out;
+}
+
+#headline:hover #heading,
+#headline:hover #subheading {
+  color: rgb(135, 21, 3);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #headline .txt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  #headline .txt #heading {
+    width: 50%;
+    color: white;
+    font-size: bold;
+    font-family: "inder";
+    font-size: 16px;
+    text-shadow: 2px 2px 4px black;
+  }
+  #headline .txt #subheading {
+    width: 50%;
+    color: white;
+    font-size: bold;
+    font-family: "inder";
+    font-size: 10px;
+    text-shadow: 2px 2px 4px black;
+  }
+}
