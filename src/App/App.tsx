@@ -71,10 +71,12 @@ function App() {
     page: "home"
   });
 
+  const[isMobile,setIsMobile] = useState(false);
+
   return (
     <div className="App">
-      <Navbar linksLeft={linksLeft} linksRight={linksRight} icons={socialLinks} />
-      <MainContentSection main={page} />
+      <Navbar linksLeft={linksLeft} linksRight={linksRight} icons={socialLinks} isMobile={isMobile} setMobileState={setIsMobile} />
+      <MainContentSection main={page} mobileState={isMobile} setMobileState={setIsMobile} />
     </div>
 
 

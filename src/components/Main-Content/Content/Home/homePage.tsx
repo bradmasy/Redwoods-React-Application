@@ -67,7 +67,6 @@ export const HomePage: React.FC = () => {
                 </div>
                 <div id="main-photo">
                     <img src={imgPaths[3]}></img>
-                    {/* <img id="" src={imgPaths[4]}></img> */}
                 </div>
                 <div id="section-2">
                     <div className="photo-row">

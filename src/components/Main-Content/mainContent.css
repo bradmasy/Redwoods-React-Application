@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "inder";
+  src: url("../../assets/fonts/Inder-Regular.ttf");
+}
 #main-content {
   display: flex;
   flex-direction: column;
@@ -7,7 +11,6 @@
 }
 #main-content #content {
   background-color: black;
-  border: solid 2px black;
   opacity: 0.7;
   height: 80%;
   border-radius: 5px 5px 5px 5px;
@@ -28,5 +31,6 @@
     flex-direction: column;
     height: 85%;
     border-radius: 10px 10px 10px 10px;
+    row-gap: 1%;
   }
 }

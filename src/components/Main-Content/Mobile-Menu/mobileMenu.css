@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "inder";
+  src: url("../../../assets/fonts/Inder-Regular.ttf");
+}
+.mobile-menu {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+.mobile-menu #align-menu-x {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1%;
+  height: 100%;
+  width: 90%;
+}
+.mobile-menu #align-menu-x #align-menu-y {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-around;
+}
+.mobile-menu #align-menu-x #align-menu-y .menu-option {
+  display: flex;
+  height: 12%;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  transition: 0.5s ease-in-out;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 10px 1px white;
+}
+.mobile-menu #align-menu-x #align-menu-y .menu-option .option-name {
+  display: flex;
+  font-family: "inder";
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+.mobile-menu #align-menu-x #align-menu-y .menu-option:hover {
+  scale: 1.05;
+}
