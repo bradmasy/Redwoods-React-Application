@@ -8,8 +8,12 @@ import instagram from "../assets/icons/instagram.png";
 import twitter from "../assets/icons/twitter.png";
 import youtube from "../assets/icons/youtube.png";
 import music from "../assets/icons/spotify.png";
-
+import { HomePage } from '../components/Main-Content/Content/Home/homePage';
 import { MainContentSection } from '../components/Main-Content/mainContent';
+import { BrowserRouter as Router, Routes, Route, Link, useParams,useLocation } from "react-router-dom";
+
+const reactRouterDom = require("react-router-dom");
+
 
 function App() {
   const linksLeft = [
@@ -18,26 +22,26 @@ function App() {
       content: "HOME"
     },
     {
-      url: "https://www.facebook.com",
+      url: "/about",
       content: "THE BOYS"
     },
     {
-      url: "https://www.twitter.com",
+      url: "/merch",
       content: "MERCH"
     }
   ]
 
   const linksRight = [
     {
-      url: "/",
+      url: "/media",
       content: "MEDIA"
     },
     {
-      url: "https://www.facebook.com",
+      url: "/dates",
       content: "DATES"
     },
     {
-      url: "https://www.twitter.com",
+      url: "/contact",
       content: "CONTACT"
     }
   ]
@@ -68,14 +72,13 @@ function App() {
 
 
   const [page, setPage] = useState({
-    page: "home"
+    page: "home", url: "/"
   });
 
-  const[isMobile,setIsMobile] = useState(false);
-
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <div className="App">
-      <Navbar linksLeft={linksLeft} linksRight={linksRight} icons={socialLinks} isMobile={isMobile} setMobileState={setIsMobile} />
+      <Navbar linksLeft={linksLeft} linksRight={linksRight} icons={socialLinks} isMobile={isMobile} setMobileState={setIsMobile} setPage={setPage} />
       <MainContentSection main={page} mobileState={isMobile} setMobileState={setIsMobile} />
     </div>
 

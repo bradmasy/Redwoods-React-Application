@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "inder";
+  src: url("../../assets/fonts/Inder-Regular.ttf");
+}
+#band-profile {
+  display: flex;
+  border: solid red 2px;
+  height: 100%;
+  color: white;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "inder";
+}

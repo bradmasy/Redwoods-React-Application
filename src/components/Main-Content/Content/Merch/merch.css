@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "inder";
+  src: url("../../../../assets/fonts/Inder-Regular.ttf");
+}
+#merch-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-family: "inder";
+}
+#merch-page #cart {
+  display: flex;
+  justify-content: center;
+  height: 5%;
+  padding: 1%;
+}
+#merch-page #cart #cart-container {
+  display: flex;
+  height: 100%;
+  justify-content: right;
+  width: 90%;
+}
+#merch-page #cart #cart-container #cart-content {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+}
+#merch-page #cart #cart-container #cart-content #cart-icon {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+#merch-page #cart #cart-container #cart-content #cart-icon img {
+  display: flex;
+  height: 100%;
+}
+#merch-page #cart #cart-container #cart-content #cart-icon:hover {
+  cursor: pointer;
+}
+#merch-page #cart #cart-container #cart-content #item-count {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+#merch-page #cart #cart-container #cart-content #total-spend {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+#merch-page #store-content-container {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  justify-content: center;
+}
+#merch-page #store-content-container #store-content-x {
+  display: flex;
+  width: 90%;
+  background-color: black;
+  border-radius: 15px 15px 15px 15px;
+  opacity: 70%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  row-gap: 2%;
+}
+#merch-page #store-content-container #store-content-x .merch-item {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 30%;
+  height: 90%;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-title {
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 1.25em;
+  height: 7%;
+  align-items: center;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-price {
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 1.25em;
+  height: 7%;
+  align-items: center;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-img {
+  display: flex;
+  height: 60%;
+  justify-content: center;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-img .merch-img-x-align {
+  display: flex;
+  width: 50%;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-button-container {
+  display: flex;
+  height: 7%;
+  justify-content: center;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-button-container .merch-button-x {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-button-container .merch-button-x .merch-button {
+  display: flex;
+  font-family: "inder";
+  border-radius: 15px 15px 15px 15px;
+  align-items: center;
+  padding: 12%;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px black;
+  transition: 0.5s ease-in-out;
+}
+#merch-page #store-content-container #store-content-x .merch-item .merch-button-container .merch-button-x .merch-button:hover {
+  cursor: pointer;
+  scale: 1.05;
+  background-color: white;
+}
+#merch-page #store-content-container #store-content-x::-webkit-scrollbar {
+  width: 10px;
+  display: flex;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+#merch-page #store-content-container #store-content-x::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#merch-page #store-content-container #store-content-x::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 15px 15px 15px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  #merch-page {
+    border: solid 2px red;
+    height: 100%;
+    width: 100%;
+  }
+}

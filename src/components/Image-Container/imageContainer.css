@@ -1,0 +1,27 @@
+.image-container-object {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.image-container-object .image-container-x {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px 15px 15px 15px;
+}
+.image-container-object .image-container-x .image-container-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: 90%;
+  border-radius: 15px 15px 15px 15px;
+}
+.image-container-object .image-container-x .image-container-y .image-container-img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+  opacity: 60%;
+}

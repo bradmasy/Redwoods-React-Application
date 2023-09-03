@@ -5,7 +5,9 @@ import { useState } from "react";
 import { Headline } from "../Headline";
 import { HomePage } from "./Content/Home/homePage";
 import { MobileMenu } from "./Mobile-Menu";
-
+import { TheBoysPage } from "./Content/The-Boys/theBoysPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { MerchPage } from "./Content/Merch/merchPage";
 
 interface MainContentProps {
     main: MainContent;
@@ -24,16 +26,14 @@ const options = [
 ]
 
 export const MainContentSection: React.FC<MainContentProps> = ({ main, mobileState, setMobileState }) => {
-
-    // const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(true);
-
+    console.log(main)
     if (mobileState) {
         return (
             <div id="main-content">
                 <Headline heading={{ title: "Witch Hunt Out Now" }} subheading="Click Here to Listen" />
 
                 <div id="content">
-                   <MobileMenu options={options}/>
+                    <MobileMenu options={options} />
 
                 </div>
             </div>
@@ -42,21 +42,18 @@ export const MainContentSection: React.FC<MainContentProps> = ({ main, mobileSta
     else {
         return (
             <div id="main-content">
-                <Headline heading={{ title: "Witch Hunt Out Now" }} subheading="Click Here to Listen" />
-
-                <div id="content">
-                    {main.page === "home" ? (
-                        <HomePage />
-                        //  <div>Render content for home page</div>
-                    ) : main.page === "about" ? (
-                        <div>Render content for about page</div>
-                    ) : main.page === "contact" ? (
-                        <div>Render content for contact page</div>
-                    ) : (
-                        <div>Render content for other pages</div>
-                    )}
-                </div>
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/about" element={<TheBoysPage />} />
+                        <Route path="/merch" element={<MerchPage />} />
+                        <Route path="/media" element={<HomePage/>}/>
+                        <Route path="/dates" element={<HomePage/>}/>
+                        <Route path="/contact" element={<HomePage/>}/>
+                    </Routes>
+                </Router>
             </div>
+
         );
     }
 };

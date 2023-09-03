@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "inder";
+    src: url("../../../../assets/fonts/Inder-Regular.ttf")
+}
+
+#merch-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: "inder";
+
+    #cart {
+        display: flex;
+        justify-content: center;
+        //   border:solid purple 2px;
+        height: 5%;
+        padding: 1%;
+
+        #cart-container {
+            display: flex;
+            height: 100%;
+            justify-content: right;
+            width: 90%;
+            //    border:solid red 2px;
+
+            #cart-content {
+                display: flex;
+                width: 15%;
+                justify-content: space-between;
+                // border:solid purple 2px;
+
+                #cart-icon {
+                    display: flex;
+                    //      border:solid green 2px;
+                    width: 25%;
+                    justify-content: center;
+
+                    img {
+                        display: flex;
+                        height: 100%;
+                    }
+                }
+
+                #cart-icon:hover {
+                    cursor: pointer;
+                }
+
+                #item-count {
+                    display: flex;
+                    //       border:solid green 2px;
+                    width: 40%;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #total-spend {
+                    display: flex;
+                //    border: solid green 2px;
+                    width: 25%;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+
+
+        }
+    }
+
+    #store-content-container {
+        display: flex;
+        height: 90%;
+        width: 100%;
+       // border: solid 2px green;
+        justify-content: center;
+
+        #store-content-x {
+            display: flex;
+            //  border: solid purple 2px;
+            width: 90%;
+            background-color: black;
+            border-radius: 15px 15px 15px 15px;
+            opacity: 70%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 100%;
+            overflow: scroll;
+            overflow-x: hidden;
+            row-gap: 2%;
+
+            .merch-item {
+                display: flex;
+              //  border: solid red 2px;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 30%;
+                height: 90%;
+
+                .merch-title {
+                    display: flex;
+                    color: white;
+                    justify-content: center;
+                    font-size: 1.25em;
+                    height: 7%;
+                    //    border:solid green 2px;
+                    align-items: center;
+
+                }
+
+                .merch-price {
+                    display: flex;
+                    color: white;
+                    justify-content: center;
+                    font-size: 1.25em;
+                    height: 7%;
+                    // border:solid green 2px;
+                    align-items: center;
+
+                }
+
+                .merch-img {
+                    display: flex;
+                    height: 60%;
+                    // border:solid 2px red;
+                    justify-content: center;
+
+                    .merch-img-x-align {
+                        display: flex;
+                        //  border:solid green 2px;
+                        width: 50%;
+                    }
+                }
+
+                .merch-button-container {
+                    display: flex;
+                    //border:solid blue 2px;
+                    height: 7%;
+                    justify-content: center;
+
+                    .merch-button-x {
+                        display: flex;
+                        width: 20%;
+
+                        justify-content: center;
+
+                        .merch-button {
+                            display: flex;
+                            font-family: "inder";
+                            border-radius: 15px 15px 15px 15px;
+                            align-items: center;
+                            padding: 12%;
+                            font-weight: bold;
+                            box-shadow: 0px 0px 0px black;
+
+                            transition: 0.5s ease-in-out;
+
+                        }
+
+                        .merch-button:hover {
+                            cursor: pointer;
+                            scale: 1.05;
+                            background-color: white;
+                          //  box-shadow: 2px 1px 10px 1px white;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #store-content-x::-webkit-scrollbar {
+            width: 10px;
+            display: flex;
+            background-color: white;
+            border-radius: 15px 15px 15px 15px;
+
+        }
+
+        #store-content-x::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #store-content-x::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+            border-radius: 15px 15px 15px 15px;
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #merch-page {
+        border: solid 2px red;
+        height: 100%;
+        width: 100%;
+
+        #store-content-container {}
+
+    }
+}

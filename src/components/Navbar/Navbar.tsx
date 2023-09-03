@@ -7,12 +7,14 @@ import { SocialIconBar } from "../Icon/index";
 import hamburgerMenu from "../../assets/icons/hamburger-menu.png";
 import { HamburgerMenu } from "../Hamburger-Menu/hamburgerMenu";
 import { useState } from "react";
+import { MainContent } from "../Main-Content/main";
 
 interface NavbarProps {
     linksRight: Array<{
         url: string;
         content: string;
     }>;
+
     linksLeft: Array<{
         url: string;
         content: string;
@@ -21,12 +23,12 @@ interface NavbarProps {
     icons: Array<{ url: string; img: string }>;
     isMobile: boolean;
     setMobileState: (state: boolean) => void;
+    setPage: (page: MainContent) => void;
 }
 
 
 
-export const Navbar: React.FC<NavbarProps> = ({ linksRight, linksLeft, icons, isMobile, setMobileState }) => {
-
+export const Navbar: React.FC<NavbarProps> = ({ linksRight, linksLeft, icons, isMobile, setMobileState, setPage }) => {
 
     return (
 
@@ -35,14 +37,13 @@ export const Navbar: React.FC<NavbarProps> = ({ linksRight, linksLeft, icons, is
 
             <div id="links-menu">
                 {linksLeft.map((link, index) => (
-                    <HyperLink key={index} link={link} />
+                    <HyperLink key={index} link={link} setPage={setPage}/>
                 ))}
-
 
                 <BandLogo logo={{ img: logo_img }} />
 
                 {linksRight.map((link, index) => (
-                    <HyperLink key={index} link={link} />
+                    <HyperLink key={index} link={link} setPage={setPage} />
                 ))}
             </div>
 

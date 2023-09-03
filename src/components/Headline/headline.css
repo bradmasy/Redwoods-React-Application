@@ -20,7 +20,6 @@
   font-family: "inder";
   font-size: 20px;
   text-shadow: 2px 2px 4px black;
-  transition: 1s ease-in-out;
   width: 20%;
 }
 #headline .txt #subheading {
@@ -30,12 +29,10 @@
   font-family: "inder";
   font-size: 14px;
   text-shadow: 2px 2px 4px black;
-  transition: 2s ease-in-out;
 }
 
 #headline:hover #heading,
 #headline:hover #subheading {
-  color: rgb(135, 21, 3);
   cursor: pointer;
 }
 

@@ -1,0 +1,28 @@
+{
+    "profiles": [
+        {
+            "image": "../",
+            "content": "Vocals and Guitar",
+            "name": "Devon Webber",
+            "title": "Guitar"
+        },
+        {
+            "image": "../",
+            "content": "Bass Player content",
+            "name": "Chad Carlson",
+            "title": "Bass(What even is that?)"
+        },
+        {
+            "image": "../",
+            "content": "Guitarist",
+            "name": "Bradley Masciotra",
+            "title": "Guitar"
+        },
+        {
+            "image": "../",
+            "content": "John is the drummer",
+            "name": "John Tanner",
+            "title": "Drum"
+        }
+    ]
+}
