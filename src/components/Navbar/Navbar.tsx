@@ -2,7 +2,7 @@ import React from "react";
 import { HyperLink } from "./Link/index";
 import "./Navbar.css"
 import { BandLogo } from "../Logo/index";
-import logo_img from "../../assets/img/Redwoods_Logo_Yellow.png";
+import logo_img from "../../assets/img/Redwoods_Logo_Yellow_Stroke.png";
 import { SocialIconBar } from "../Icon/index";
 import hamburgerMenu from "../../assets/icons/hamburger-menu.png";
 import { HamburgerMenu } from "../Hamburger-Menu/hamburgerMenu";

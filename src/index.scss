@@ -2,10 +2,11 @@ html {
   display: flex;
   height: 98%; // Will eliminate the scroll bar
   width: 100%;
+  background-image: url('../src/assets/textures/paper-texture.jpg');
   background-color: #efaf4d;
 
   background-repeat: repeat;
-
+  background-blend-mode: multiply;
     
   
   body {
@@ -21,3 +22,5 @@ html {
       }
   }
 }
+
+

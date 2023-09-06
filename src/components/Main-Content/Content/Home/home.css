@@ -142,7 +142,6 @@
     display: flex;
     flex-direction: column;
     height: 85%;
-    border-radius: 10px 10px 10px 10px;
     row-gap: 1%;
   }
   #content #home-grid {
@@ -150,64 +149,68 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    background-color: black;
   }
   #content #home-grid #column-align {
     display: flex;
     flex-direction: column;
     height: 99%;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     overflow: scroll;
   }
   #content #home-grid #column-align #section-1 {
-    display: flex;
+    display: none;
     flex-direction: column;
-    width: 100%;
-    height: 33%;
+    width: 92%;
+    height: 100%;
+    justify-content: space-around;
   }
   #content #home-grid #column-align #section-1 .photo-column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
   #content #home-grid #column-align #section-1 .photo-column .photo-column-img {
     border-radius: 10px 10px 10px 10px;
     display: flex;
-    width: 49%;
-    height: 98%;
+    width: 100%;
+    height: 48%;
   }
   #content #home-grid #column-align #section-1 .long-photo-column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     height: 50%;
   }
   #content #home-grid #column-align #section-1 .long-photo-column .long-photo-column-img {
     display: flex;
-    width: 29%;
-    height: 98%;
+    width: 100%;
+    height: 48%;
   }
   #content #home-grid #column-align #section-1 .long-photo-column .long-photo-column-img-sm {
     display: flex;
-    width: 69%;
-    height: 98%;
+    width: 100%;
+    height: 48%;
   }
   #content #home-grid #column-align #main-photo {
     display: flex;
-    height: 33%;
+    height: 100%;
     width: 100%;
+    border-radius: 10x 10px 10px 10px;
     justify-content: center;
   }
   #content #home-grid #column-align #main-photo img {
-    display: flex;
+    height: 98%;
     width: 98%;
   }
   #content #home-grid #column-align #section-2 {
-    display: flex;
+    display: none;
     height: 33%;
     width: 100%;
   }

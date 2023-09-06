@@ -17,11 +17,16 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ img, state, setSta
     const revealMenu = () => {
 
         let hamburgerButton = document.getElementById("hamburger-set");
+        const content = document.getElementById("content");
 
         if (hamburgerButton && !menuOpen) {
             hamburgerButton.innerHTML = `<img id="x-button" src=${xButton}></img>`
             setMenuOpen(true);
             setState(true);
+            if (content) {
+          //      content.style.backgroundColor = "black";
+            }
+            console.log(content)
             console.log(`the state is ${state}`)
 
         } else if (hamburgerButton && menuOpen) {
@@ -32,6 +37,9 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ img, state, setSta
             `
             setMenuOpen(false);
             setState(false);
+            if (content) {
+                //content.style.backgroundColor = "#efaf4d";
+            }
             console.log(`the state is ${state}`)
 
         }
