@@ -46,6 +46,7 @@ export const HomePage: React.FC = () => {
                 <div id="home-grid">
                     <div id="column-align">
                         <div id="section-1">
+                            
                             <div className="photo-column">
                                 <div className="photo-column-img">
                                     <img src={imgPaths[12]}>
