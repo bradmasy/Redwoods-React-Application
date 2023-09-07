@@ -8,6 +8,7 @@ import { MobileMenu } from "./Mobile-Menu";
 import { TheBoysPage } from "./Content/The-Boys/theBoysPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MerchPage } from "./Content/Merch/merchPage";
+import { DatesPage } from "./Content/Dates/index";
 
 interface MainContentProps {
     main: MainContent;
@@ -24,6 +25,46 @@ const options = [
     "CONTACT"
 
 ]
+
+const dates = [
+    {
+        date: "FRIDAY, OCT 23RD",
+        location: "The Fox Theater",
+        city: "Vancouver, British Columbia",
+        ticketLink: "https://www.eventbrite.com/e/158149156229"
+    },
+    {
+        date: "FRIDAY, OCT 23RD",
+        location: "The Fox Theater",
+        city: "Vancouver, British Columbia",
+        ticketLink: "https://www.eventbrite.com/e/158149156229"
+    },
+    {
+        date: "FRIDAY, OCT 23RD",
+        location: "The Fox Theater",
+        city: "Vancouver, British Columbia",
+        ticketLink: "https://www.eventbrite.com/e/158149156229"
+    },
+    {
+        date: "FRIDAY, OCT 23RD",
+        location: "The Fox Theater",
+        city: "Vancouver, British Columbia",
+        ticketLink: "https://www.eventbrite.com/e/158149156229"
+    },
+    {
+        date: "FRIDAY, OCT 23RD",
+        location: "The Fox Theater",
+        city: "Vancouver, British Columbia",
+        ticketLink: "https://www.eventbrite.com/e/158149156229"
+    },
+    {
+        date: "FRIDAY, OCT 23RD",
+        location: "The Fox Theater",
+        city: "Vancouver, British Columbia",
+        ticketLink: "https://www.eventbrite.com/e/158149156229"
+    }
+]
+
 
 export const MainContentSection: React.FC<MainContentProps> = ({ main, mobileState, setMobileState }) => {
     console.log(main)
@@ -48,7 +89,7 @@ export const MainContentSection: React.FC<MainContentProps> = ({ main, mobileSta
                         <Route path="/about" element={<TheBoysPage />} />
                         <Route path="/merch" element={<MerchPage />} />
                         <Route path="/media" element={<HomePage/>}/>
-                        <Route path="/dates" element={<HomePage/>}/>
+                        <Route path="/dates" element={<DatesPage dates={dates}/>}/>
                         <Route path="/contact" element={<HomePage/>}/>
                     </Routes>
                 </Router>
