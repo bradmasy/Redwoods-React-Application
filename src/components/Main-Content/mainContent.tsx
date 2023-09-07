@@ -30,37 +30,37 @@ const dates = [
     {
         date: "FRIDAY, OCT 23RD",
         location: "The Fox Theater",
-        city: "Vancouver, British Columbia",
+        city: "Vancouver, BC",
         ticketLink: "https://www.eventbrite.com/e/158149156229"
     },
     {
         date: "FRIDAY, OCT 23RD",
         location: "The Fox Theater",
-        city: "Vancouver, British Columbia",
+        city: "Vancouver, BC",
         ticketLink: "https://www.eventbrite.com/e/158149156229"
     },
     {
         date: "FRIDAY, OCT 23RD",
         location: "The Fox Theater",
-        city: "Vancouver, British Columbia",
+        city: "Vancouver, BC",
         ticketLink: "https://www.eventbrite.com/e/158149156229"
     },
     {
         date: "FRIDAY, OCT 23RD",
         location: "The Fox Theater",
-        city: "Vancouver, British Columbia",
+        city: "Vancouver, BC",
         ticketLink: "https://www.eventbrite.com/e/158149156229"
     },
     {
         date: "FRIDAY, OCT 23RD",
         location: "The Fox Theater",
-        city: "Vancouver, British Columbia",
+        city: "Vancouver, BC",
         ticketLink: "https://www.eventbrite.com/e/158149156229"
     },
     {
         date: "FRIDAY, OCT 23RD",
         location: "The Fox Theater",
-        city: "Vancouver, British Columbia",
+        city: "Vancouver, BC",
         ticketLink: "https://www.eventbrite.com/e/158149156229"
     }
 ]

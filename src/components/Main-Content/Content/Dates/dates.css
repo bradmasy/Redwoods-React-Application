@@ -10,6 +10,17 @@
   height: 100%;
   font-family: "inder";
 }
+#dates-page #title {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  align-items: center;
+}
+#dates-page #title #title-line {
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
 #dates-page #dates-content {
   display: flex;
   height: 80%;
@@ -19,6 +30,7 @@
 #dates-page #dates-content #align-content-x {
   display: flex;
   width: 80%;
+  align-items: center;
   background-color: black;
   opacity: 0.7;
   justify-content: center;
@@ -27,8 +39,10 @@
 #dates-page #dates-content #align-content-x #date-grid-x {
   display: flex;
   width: 90%;
+  height: 90%;
   flex-direction: column;
   justify-content: center;
+  overflow-y: scroll;
 }
 #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y {
   display: flex;
@@ -58,7 +72,7 @@
 }
 #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-location {
   display: flex;
-  width: 15%;
+  width: 20%;
   color: rgb(135, 21, 3);
   align-items: center;
   justify-content: center;
@@ -78,7 +92,7 @@
   align-items: center;
 }
 #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-tickets button {
-  height: 55%;
+  height: 80%;
   width: 40%;
   border-radius: 10px 10px 10px 10px;
   border: none;
@@ -90,4 +104,124 @@
 #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-tickets button:hover {
   scale: 1.05;
   cursor: pointer;
+}
+#dates-page #dates-content #align-content-x #date-grid-x::-webkit-scrollbar {
+  width: 10px;
+  display: flex;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+#dates-page #dates-content #align-content-x #date-grid-x::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#dates-page #dates-content #align-content-x #date-grid-x::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 15px 15px 15px 15px;
+}
+
+@media screen and (max-width: 850px) {
+  #dates-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: "inder";
+  }
+  #dates-page #title {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    align-items: center;
+  }
+  #dates-page #title #title-line {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  #dates-page #dates-content {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+  }
+  #dates-page #dates-content #align-content-x {
+    display: flex;
+    width: 97%;
+    background-color: black;
+    opacity: 0.7;
+    justify-content: center;
+    border-radius: 15px 15px 15px 15px;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    row-gap: 8%;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .size-date {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border-bottom: solid white 2px;
+    font-size: 0.5em;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-time {
+    display: flex;
+    width: 20%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-location {
+    display: flex;
+    width: 15%;
+    color: rgb(135, 21, 3);
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-city {
+    display: flex;
+    width: 25%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-tickets {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-tickets button {
+    height: 55%;
+    width: 40%;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    font-family: "inder";
+    font-weight: bold;
+    background-color: #efaf4d;
+    transition: 0.5s ease-in-out;
+    font-size: 0.97em;
+  }
+  #dates-page #dates-content #align-content-x #date-grid-x #date-grid-y .date .date-tickets button:hover {
+    scale: 1.05;
+    cursor: pointer;
+  }
 }

@@ -12,6 +12,13 @@ export const DatesPage: React.FC<DateProps> = (dates) => {
 
     return (
         <div id="dates-page">
+            <div id="title">
+                <div>
+                    <div id="title-line">
+                        UPCOMING EVENTS
+                    </div>
+                </div>
+            </div>
             <div id="dates-content">
                 <div id="align-content-x">
                     <div id="date-grid-x">
@@ -39,14 +46,10 @@ export const DatesPage: React.FC<DateProps> = (dates) => {
                                             </button>
                                         </div>
                                     </div>
-
-
                                 </div>
                             ))}
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

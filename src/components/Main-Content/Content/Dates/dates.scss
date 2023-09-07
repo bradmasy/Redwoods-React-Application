@@ -12,6 +12,21 @@
     height: 100%;
     font-family: "inder";
 
+    #title{
+        display: flex;
+        justify-content: center;
+       // border: solid 2px black;
+        height: 20%;
+        align-items: center;
+
+        #title-line{
+            font-size: 2em;
+            color:white;
+            text-shadow: 2px 2px 5px black;
+        }
+        
+    }
+
     #dates-content {
         display: flex;
         //  border:solid black 2px;
@@ -22,7 +37,8 @@
         #align-content-x {
             display: flex;
             width: 80%;
-            //  border:2px solid purple ;
+            align-items: center;
+            //border:2px solid purple ;
             background-color: black;
             opacity: 0.7;
             justify-content: center;
@@ -30,10 +46,13 @@
 
             #date-grid-x {
                 display: flex;
-               // border: solid purple 2px;
+                //border: solid purple 2px;
                 width: 90%;
+                height: 90%;
                 flex-direction: column;
                 justify-content: center;
+                overflow-y: scroll;
+
 
                 #date-grid-y {
                     display: flex;
@@ -53,6 +72,7 @@
                             display: flex;
                             width:90%;
                             justify-content: space-between;
+
                             border-bottom: solid white 2px;
 
                         }
@@ -67,7 +87,7 @@
 
                         .date-location {
                             display: flex;
-                            width: 15%;
+                            width: 20%;
                             color: rgb(135, 21, 3);
                             align-items: center;
                             justify-content: center;
@@ -90,7 +110,7 @@
                             align-items: center;
 
                             button {
-                                height: 55%;
+                                height: 80%;
                                 width: 40%;
                                 border-radius: 10px 10px 10px 10px;
                                 border:none;
@@ -109,7 +129,160 @@
                 }
             }
 
+            #date-grid-x::-webkit-scrollbar {
+                width: 10px;
+                display: flex;
+                background-color: white;
+                border-radius: 15px 15px 15px 15px;
+    
+            }
+    
+            #date-grid-x::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+    
+            #date-grid-x::-webkit-scrollbar-thumb {
+                background-color: darkgrey;
+                outline: 1px solid slategrey;
+                border-radius: 15px 15px 15px 15px;
+    
+            }
 
         }
     }
+}
+
+
+@media screen and (max-width: 850px) {
+    #dates-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //  border:solid 2px green;
+        width: 100%;
+        height: 100%;
+        font-family: "inder";
+    
+
+        #title{
+            display: flex;
+            justify-content: center;
+            //border: solid 2px black;
+            height: 10%;
+            align-items: center;
+    
+            #title-line{
+                font-size: 2em;
+                color:white;
+                text-shadow: 2px 2px 5px black;
+            }
+            
+        }
+        #dates-content {
+            display: flex;
+            //  border:solid black 2px;
+            height: 80%;
+            width: 100%;
+            justify-content: center;
+    
+            #align-content-x {
+                display: flex;
+                width: 97%;
+                //  border:2px solid purple ;
+                background-color: black;
+                opacity: 0.7;
+                justify-content: center;
+                border-radius: 15px 15px 15px 15px;
+    
+                #date-grid-x {
+                    display: flex;
+                    //border: solid purple 2px;
+                    width: 95%;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    #date-grid-y {
+                        display: flex;
+                        flex-direction: column;
+                    //    border: solid green 2px;
+                        width: 100%;
+                        height: 90%;
+                        row-gap: 8%;
+    
+                        .date {
+                            display: flex;
+                            width: 100%;
+                            height: 15%;
+                            justify-content: center;
+                            //border:solid 2px green;
+                            flex-wrap: wrap;
+
+                            .size-date{
+                                display: flex;
+                                width:90%;
+                                justify-content: space-between;
+                                border-bottom: solid white 2px;
+                                //border:solid red 2px;
+                                font-size: .5em;
+                            }
+    
+                            .date-time {
+                                display: flex;
+                                width: 20%;
+                                color: white;
+                                align-items: center;
+                                justify-content: center;
+                            }
+    
+                            .date-location {
+                                display: flex;
+                                width: 15%;
+                                color: rgb(135, 21, 3);
+                                align-items: center;
+                                justify-content: center;
+                                font-weight: bold;
+    
+                            }
+    
+                            .date-city {
+                                display: flex;
+                                width: 25%;
+                                color: white;
+                                justify-content: center;
+                                align-items: center;
+                            }
+    
+                            .date-tickets {
+                                display: flex;
+                                width: 40%;
+                                justify-content: space-around;
+                                align-items: center;
+    
+                                button {
+                                    height: 55%;
+                                    width: 40%;
+                                    border-radius: 5px 5px 5px 5px;
+                                    border:none;
+                                    font-family: "inder";
+                                    font-weight: bold;
+                                    background-color: #efaf4d;
+                                    transition: 0.5s ease-in-out;
+                                    font-size: .97em;
+                                }
+    
+                                button:hover{
+                                    scale: 1.05;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+    } 
+
+    
 }
