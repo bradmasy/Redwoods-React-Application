@@ -4,17 +4,27 @@ html {
   width: 100%;
   background-image: url("../src/assets/textures/paper-texture.jpg");
   background-color: #efaf4d;
+  overflow-x: hidden;
   background-repeat: repeat;
   background-blend-mode: multiply;
 }
 html body {
   display: flex;
-  height: 100%;
-  width: 99%;
+  height: 98%;
+  width: 100%;
   flex-direction: column;
 }
 html body #root {
   display: flex;
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    overflow-x: hidden;
+  }
+  html body {
+    overflow-x: hidden;
+  }
 }

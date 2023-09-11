@@ -10,7 +10,7 @@ interface MobileMenuProps {
 export const MobileMenu: React.FC<MobileMenuProps> = ({ options }) => {
 
     const redirectToPage = (option:string) => {
-        console.log(option)
+
         let text:string = option.toLowerCase();
         
         if(text === "home"){
@@ -39,11 +39,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ options }) => {
                     ))
                     }
                 </div>
-
             </div>
-
-
-
         </div>
     )
 }
