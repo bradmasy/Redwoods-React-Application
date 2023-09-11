@@ -13,11 +13,12 @@
 @media screen and (max-width: 768px) {
   #main-content {
     display: flex;
-    margin-top: 2%;
     flex-direction: column;
     justify-content: center;
     height: 85%;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  #main-content #content {
+    margin-top: 5%;
   }
 }

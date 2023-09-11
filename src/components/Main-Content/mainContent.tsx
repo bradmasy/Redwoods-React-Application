@@ -69,13 +69,13 @@ const dates = [
 export const MainContentSection: React.FC<MainContentProps> = ({ main, mobileState, setMobileState }) => {
     console.log(main)
     if (mobileState) {
+        console.log("MOBILE")
         return (
             <div id="main-content">
                 <Headline heading={{ title: "Witch Hunt Out Now" }} subheading="Click Here to Listen" />
 
                 <div id="content">
                     <MobileMenu options={options} />
-
                 </div>
             </div>
         )
