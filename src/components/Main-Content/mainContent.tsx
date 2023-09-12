@@ -9,6 +9,7 @@ import { TheBoysPage } from "./Content/The-Boys/theBoysPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MerchPage } from "./Content/Merch/merchPage";
 import { DatesPage } from "./Content/Dates/index";
+import { ContactPage } from "./Content/Contact/index";
 
 interface MainContentProps {
     main: MainContent;
@@ -65,6 +66,12 @@ const dates = [
     }
 ]
 
+const contacts = [
+    {
+        name:"The Collective Agency",
+        email:"matt@thecollectiveagency.ca"
+    }
+]
 
 export const MainContentSection: React.FC<MainContentProps> = ({ main, mobileState, setMobileState }) => {
     console.log(main)
@@ -90,7 +97,7 @@ export const MainContentSection: React.FC<MainContentProps> = ({ main, mobileSta
                         <Route path="/merch" element={<MerchPage />} />
                         <Route path="/media" element={<HomePage/>}/>
                         <Route path="/dates" element={<DatesPage dates={dates}/>}/>
-                        <Route path="/contact" element={<HomePage/>}/>
+                        <Route path="/contact" element={<ContactPage contacts={contacts}/>}/>
                     </Routes>
                 </Router>
             </div>
