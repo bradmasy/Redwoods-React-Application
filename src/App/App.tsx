@@ -49,23 +49,23 @@ function App() {
 
   const socialLinks = [
     {
-      url: "https://www.facebook.com",
+      url: "https://www.facebook.com/RedwoodsVancouver",
       img: facebook
     },
     {
-      url: "https://www.instagram.com",
+      url: "https://www.instagram.com/redwoodsvancouver",
       img: instagram
     },
     {
-      url: "https://www.twitter.com",
+      url: "https://www.twitter.com/RedwoodsVan",
       img: twitter
     },
     {
-      url: "https://www.youtube.com",
+      url: "https://www.youtube.com/@redwoodsvancouver7599",
       img: youtube
     },
     {
-      url: "https://www.music.com",
+      url: "https://open.spotify.com/artist/3uTxIW6v8i9yJTuKGvxRlI",
       img: music
     }
   ]
