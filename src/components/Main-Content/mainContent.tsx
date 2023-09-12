@@ -70,6 +70,10 @@ const contacts = [
     {
         name:"The Collective Agency",
         email:"matt@thecollectiveagency.ca"
+    },
+    {
+        name:"The Band",
+        email:"redwoods@redwoods.com"
     }
 ]
 

@@ -20,8 +20,16 @@ export const ContactPage: React.FC<ContactProps> = (contacts) => {
                         {contacts.contacts.map((contact,index) => {
                             return(
                                 <div className="contact-container" key={index}>
-                                    <div className="contact-name">{contact.name.toUpperCase()}</div>
-                                    <div className="contact-email">EMAIL: {contact.email}</div>
+                                    <div className="contact-name">
+                                        <div className="border-line">
+                                        {contact.name.toUpperCase()}
+                                        </div>
+                                        </div>
+                                    <div onClick={
+                                        () => {
+                                            window.location.href = `mailto:${contact.email}`
+                                        }
+                                    } className="contact-email">EMAIL: {contact.email}</div>
                                 </div>
                             )
                         })}
